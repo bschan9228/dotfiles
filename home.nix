@@ -29,6 +29,8 @@
     cowsay
     curl
     python315
+    vscode
+    kicad
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -81,4 +83,6 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
 }

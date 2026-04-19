@@ -15,7 +15,7 @@
     in {
     nixosConfigurations = {
       # Configuration for the system
-      b2ssystem = lib.nixosSystem {
+      b2slabs = lib.nixosSystem {
         inherit system;
         modules = [ ./configuration.nix ];
       };
