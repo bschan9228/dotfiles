@@ -30,7 +30,7 @@
 
   programs.vscode = {
     enable = true;
-    # mutableExtensionsDir = false;
+    # mutableExtensionsDir = true;
     profiles = {
       default = {
         extensions = with pkgs.vscode-extensions; [
@@ -40,7 +40,15 @@
         ];
       };
       nordic = {
-        extensions = with pkgs.vscode-extensions; [
+        extensions = []
+        ++ 
+        pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "nrf-connect";
+            publisher = "nordic-semiconductor";
+            version = "2026.4.1637";
+            sha256 = "sha256-tL/CCb/uV6rCa70g/qJFHn8ybM3iowJUC4LWXOwkEwY=";
+          }
         ];
       };
     };
