@@ -15,6 +15,7 @@
       set ruler
       set splitright
       set splitbelow
+      set undofile
     '';
   };
 }
