@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./modules/editor
+    ./modules/editor/nordic.nix
     ./modules/git
   ];
 
