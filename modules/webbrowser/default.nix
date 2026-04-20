@@ -4,11 +4,30 @@
   programs.firefox = {
     enable = true;
     profiles.default = {
+      # about:config
       settings = {
         "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
         "browser.urlbar.autoFill.adaptiveHistory.enabled" = true;
+        "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
+        "identity.fxaccounts.enabled" = false;
+        "browser.newtabpage.activity-stream.showWeather" = false;
+        "browser.newtabpage.activity-stream.feeds.topsites" = false;
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        "browser.urlbar.suggest.trending" = false;
       };
 
+      # disables sidebar
+      userChrome = ''
+        toolbarbutton[id*="sidebar"] {
+          display: none !important;
+        }
+      '';
+
+      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
+        ublock-origin
+        sponsorblock
+        vimium
+      ];
 
       bookmarks = {
         force = true;
@@ -58,12 +77,6 @@
           }
         ];
       };
-
-      extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
-        ublock-origin
-        sponsorblock
-        vimium
-      ];
     };
   };
 }
