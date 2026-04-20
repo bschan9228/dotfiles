@@ -14,6 +14,12 @@
         "browser.newtabpage.activity-stream.feeds.topsites" = false;
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "browser.urlbar.suggest.trending" = false;
+
+        # Firefox development tools
+        # Open using `Ctrl` + `Alt` + `Shift` + `I`
+        "devtools.chrome.enabled" = true;
+        "devtools.debugger.remote-enabled" = true;
+        # "devtools.debugger.prompt-connection" = false;
       };
 
       # disables sidebar
