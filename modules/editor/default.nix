@@ -18,6 +18,9 @@
       set splitbelow
       set undofile
 
+      highlight ColorColumn ctermbg=magenta
+      call matchadd('ColorColumn', '\%81v', 100)
+
       " Bracket autocomplete
       inoremap { {}<Esc>ha
       inoremap ( ()<Esc>ha
@@ -28,6 +31,7 @@
     '';
   };
 
+  # TODO: telescope / class tree / file tree? / file navigation; vifm? / hierarchy view / context display
   programs.neovim = {
     # enable = true; # Somehow enable is not working
     extraConfig = ''
@@ -59,4 +63,7 @@
       };
     };
   };
+
+  #TODO: emacs
+
 }
