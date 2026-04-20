@@ -28,6 +28,12 @@
     '';
   };
 
+  programs.neovim = {
+    # enable = true; # Somehow enable is not working
+    extraConfig = ''
+    '';
+  };
+
   programs.vscode = {
     enable = true;
     # mutableExtensionsDir = true;

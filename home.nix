@@ -4,6 +4,7 @@
   imports = [
     ./modules/editor
     ./modules/git
+    ./modules/webbrowser
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -31,6 +32,7 @@
     python315
     vscode
     kicad
+    neovim
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -85,4 +87,5 @@
   programs.home-manager.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+
 }

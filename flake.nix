@@ -3,11 +3,18 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-25.11";
-    home-manager.url = "github:nix-community/home-manager/release-25.11";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -24,6 +31,8 @@
       # Name should name of the user
       b2slabs = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+
+        extraSpecialArgs = { inherit inputs; };
         modules = [ ./home.nix ];
       };
     };
