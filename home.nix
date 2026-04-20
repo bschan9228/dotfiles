@@ -28,11 +28,18 @@
     # # "Hello, world!" when run.
     hello
     cowsay
-    curl
-    python315
-    vscode
-    kicad
+    lolcat
+
     neovim
+    vscode
+
+    docker
+    python315
+    gcc
+    gdb
+
+    bruno
+    kicad
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
