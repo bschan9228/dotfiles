@@ -2,5 +2,5 @@
 
 {
   xdg.configFile."inkscape/templates/default.svg".source =
-    ./default.svg;
+    ./inkscape_template.svg;
 }
