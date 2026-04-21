@@ -79,6 +79,10 @@
                 name = "yahoo finance";
                 url = "https://www.finance.yahoo.com";
               }
+              {
+                name = "aliexpress";
+                url = "https://www.aliexpress.com";
+              }
             ];
           }
         ];

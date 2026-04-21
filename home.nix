@@ -5,6 +5,7 @@
     ./modules/editor
     ./modules/git
     ./modules/webbrowser
+    ./modules/graphicseditor
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -30,8 +31,15 @@
     cowsay
     lolcat
 
+    inkscape
+    gimp
+
+    hyprland
+
+    tmux
     neovim
     vscode
+    minicom
 
     docker
     python315
