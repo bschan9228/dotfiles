@@ -3,6 +3,7 @@
 {
   imports = [
     ./modules/editor
+    ./modules/terminal
     ./modules/git
     ./modules/webbrowser
     ./modules/graphicseditor

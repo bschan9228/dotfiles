@@ -6,6 +6,7 @@
     extraConfig = ''
       set rnu
       set cursorcolumn
+      set cursorline
       set noswapfile
       set hlsearch " `Ctrl-l to clear highlighted search
       " set incsearch " this one is not as good
@@ -18,11 +19,13 @@
       set splitright
       set splitbelow
       set undofile
-      set cursorline
       set shortmess-=S
 
       highlight ColorColumn ctermbg=magenta
       call matchadd('ColorColumn', '\%81v', 100)
+
+      highlight CursorColumn ctermbg=238
+      highlight CursorLine cterm=NONE ctermbg=238
 
       " Bracket autocomplete
       inoremap { {}<Esc>ha

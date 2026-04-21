@@ -52,8 +52,20 @@
                 url = "https://www.google.com";
               }
               {
+                name = "translate";
+                url = "https://www.translate.google.com";
+              }
+              {
+                name = "maps";
+                url = "https://www.maps.google.com";
+              }
+              {
                 name = "youtube";
                 url = "https://www.Youtube.com";
+              }
+              {
+                name = "gitlab";
+                url = "https://www.gitlab.com";
               }
               {
                 name = "github";
@@ -62,10 +74,6 @@
               {
                 name = "amazon";
                 url = "https://www.amazon.com";
-              }
-              {
-                name = "maps";
-                url = "https://www.maps.google.com";
               }
               {
                 name = "onshape";
@@ -82,6 +90,10 @@
               {
                 name = "aliexpress";
                 url = "https://www.aliexpress.com";
+              }
+              {
+                name = "chatgpt";
+                url = "https://www.chatgpt.com";
               }
             ];
           }
