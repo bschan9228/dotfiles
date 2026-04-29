@@ -47,8 +47,11 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # services.displayManager.gdm.enable = true;
+  # services.desktopManager.gnome.enable = true;
+
+  # Enable hyprland
+  programs.hyprland.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -102,6 +105,8 @@
   git
   htop
   curl
+
+  kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

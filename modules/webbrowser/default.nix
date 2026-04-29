@@ -95,6 +95,10 @@
                 name = "chatgpt";
                 url = "https://www.chatgpt.com";
               }
+              {
+                name = "ebay";
+                url = "https://www.ebay.com";
+              }
             ];
           }
         ];
