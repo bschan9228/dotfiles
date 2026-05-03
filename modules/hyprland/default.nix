@@ -11,10 +11,11 @@ in
     # Electron things
     home.sessionVariables.NIXOS_OZONE_WL = "1";
 
+    xdg.configFile."hypr/hyprland.conf".force = true;
+
     wayland.windowManager.hyprland = {
       enable = true;
       
-
       settings = {
 
         # Monitors
