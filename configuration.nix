@@ -107,6 +107,9 @@
   curl
 
   kitty
+  waybar
+  # dunst
+  # libnotify
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

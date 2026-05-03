@@ -3,7 +3,7 @@
 let
   terminal = "kitty";
   fileManager = "dolphin";
-  menu = "hyprlauncher:";
+  menu = "hyprlauncher";
   webbrowser = "firefox";
 in
   {
@@ -29,6 +29,7 @@ in
         exec-once = [
           "${terminal}"
           "firefox"
+          "waybar"
         ];
 
         # Environmental Variables
@@ -69,8 +70,11 @@ in
           "$mod, Q, exec, ${terminal}"
           "$mod, F, exec, ${webbrowser}"
           "$mod, C, killactive,"
-          "$mod, E, exec, ${fileManager}"
+          "$mod, M, exec, command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"
+          "$mod, E, exec, ${fileManager}" #TODO
           "$mod, V, togglefloating,"
+          "$mod, R, exec, ${menu}" #TODO
+          "$mod, P, pseudo, " # TODO
           "$mod, J, layoutmsg, togglesplit"
 
           # Move focus
@@ -133,8 +137,8 @@ in
             binde = [
               ",right,resizeactive,${stepSize} 0"
               ",left,resizeactive,-${stepSize} 0"
-              ",up,resizeactive,0, -${stepSize}"
-              ",down,resizeactive,0, ${stepSize}"
+              ",up,resizeactive,0 -${stepSize}"
+              ",down,resizeactive,0 ${stepSize}"
             ];
 
             bind = [
