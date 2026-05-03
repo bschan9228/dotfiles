@@ -29,7 +29,9 @@ in
         exec-once = [
           "${terminal}"
           "firefox"
-          "waybar"
+          "ashell"
+          # "waybar"
+          "dunst"
         ];
 
         # Environmental Variables

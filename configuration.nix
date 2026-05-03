@@ -107,9 +107,11 @@
   curl
 
   kitty
-  waybar
-  # dunst
-  # libnotify
+  ashell # Status bar
+  waybar # Status bar
+  dunst # Notifications
+  libnotify # Notifications
+  pipewire # Screensharing
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
