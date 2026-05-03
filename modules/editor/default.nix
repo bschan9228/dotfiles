@@ -21,6 +21,9 @@
       set undofile
       set shortmess-=S
 
+      " Increment characters
+      " set nrformats+=alpha
+
       highlight ColorColumn ctermbg=magenta
       call matchadd('ColorColumn', '\%81v', 100)
 

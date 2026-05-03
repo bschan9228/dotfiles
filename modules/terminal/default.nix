@@ -4,7 +4,7 @@
   programs.tmux = {
     enable = true;
     extraConfig = ''
-      set -g prefix C-s
+      set -g prefix C-b
       set -g mouse on
 
       bind-key h select-pane -L
