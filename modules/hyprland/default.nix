@@ -58,6 +58,8 @@ in
         dwindle = {
           pseudotile = true;
           preserve_split = true;
+          force_split = 2; # Force split to right side
+          single_window_aspect_ratio = "16 9";
         };
 
         # Autostart
@@ -94,6 +96,10 @@ in
           "$mod, 8, workspace, 8"
           "$mod, 9, workspace, 9"
           "$mod, 0, workspace, 10"
+
+          # Scroll through workspaces
+          "$mod, mouse_down, workspace, e+1"
+          "$mod, mouse_up, workspace, e-1"
 
           # Move active window to workspace
           "$mod SHIFT, 1, movetoworkspace, 1"
