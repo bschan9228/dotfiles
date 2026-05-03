@@ -61,6 +61,7 @@ in
         };
 
         # Autostart
+        # TODO: figure out when to use togglefloating and dwindle
         "$mod" = "SUPER";
         bind = [
           "$mod, Q, exec, ${terminal}"
@@ -105,6 +106,9 @@ in
           "$mod SHIFT, 8, movetoworkspace, 8"
           "$mod SHIFT, 9, movetoworkspace, 9"
           "$mod SHIFT, 0, movetoworkspace, 10"
+
+          # Submaps
+          "ALT, R, submap, resize"
         ];
 
         # Move/resize windows using lmb/rmb
@@ -112,6 +116,26 @@ in
           "$mod, mouse:272, movewindow"
           "$mod, mouse:273, resizewindow"
         ];
+      };
+
+      submaps = {
+        "resize" = 
+        let
+          stepSize = "20";
+        in {
+          settings = {
+            binde = [
+              ",right,resizeactive,${stepSize} 0"
+              ",left,resizeactive,-${stepSize} 0"
+              ",up,resizeactive,0, -${stepSize}"
+              ",down,resizeactive,0, ${stepSize}"
+            ];
+
+            bind = [
+              ",escape,submap,reset"
+            ];
+          };
+        };
       };
     };
   }

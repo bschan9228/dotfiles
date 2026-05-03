@@ -8,7 +8,7 @@
       set cursorcolumn
       set cursorline
       set noswapfile
-      set hlsearch " `Ctrl-l to clear highlighted search
+      set hlsearch " `Ctrl-l` to clear highlighted search
       " set incsearch " this one is not as good
       set autoindent
       set shiftwidth=4
