@@ -86,6 +86,8 @@ in
           "$mod, up, movefocus, u"
           "$mod, down, movefocus, d"
 
+          "$mod, tab, cyclenext"
+
           # Move windows using shift+arrow keys
           "$mod SHIFT, Left, movewindow, l"
           "$mod SHIFT, Right, movewindow, r"
@@ -129,6 +131,20 @@ in
           "$mod, mouse:272, movewindow"
           "$mod, mouse:273, resizewindow"
         ];
+
+        # Picture in picture
+        # `Ctrl-Shift ]` for PiP
+        # TODO: somehow automatically avoid covering focused window
+        windowrulev2 = [
+          "float, title:^Picture-in-Picture$"
+          "pin, title:^Picture-in-Picture$"
+          "noshadow, title:^Picture-in-Picture$"
+          "noinitialfocus, title:^Picture-in-Picture$"
+          # "size 600 340, title:^Picture-in-Picture$"
+          "size 25% 25%, title:^Picture-in-Picture$"
+          "move 100%-w-5 5, title:^Picture-in-Picture$"
+        ];
+
       };
 
       submaps = {

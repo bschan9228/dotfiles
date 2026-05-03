@@ -33,6 +33,10 @@
         ublock-origin
         sponsorblock
         vimium
+        refined-github
+        tree-style-tab
+        greasemonkey
+        # keepa #TODO: unfree
       ];
 
       bookmarks = {

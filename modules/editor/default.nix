@@ -4,7 +4,7 @@
   programs.vim = {
     enable = true;
     extraConfig = ''
-      set rnu
+      set nu rnu
       set cursorcolumn
       set cursorline
       set noswapfile
@@ -20,6 +20,7 @@
       set splitbelow
       set undofile
       set shortmess-=S
+      " set nowrap " disable text wrapping
 
       " Increment characters
       " set nrformats+=alpha
@@ -38,6 +39,11 @@
       " inoremap ` ``<Esc>ha
 
     '';
+
+    plugins = with pkgs.vimPlugins; [
+      vim-surround # cs[']["] & ys1w[]] / yss[)]
+      vim-table-mode
+    ];
   };
 
   # TODO: telescope / class tree / file tree? / file navigation; vifm? / hierarchy view / context display
