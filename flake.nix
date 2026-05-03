@@ -15,27 +15,27 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
-    let 
-      lib = nixpkgs.lib;
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in {
+  let
+    lib = nixpkgs.lib;
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
     nixosConfigurations = {
       # Configuration for the system
-      b2slabs = lib.nixosSystem {
+      nixos = lib.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix ];
-      };
-    };
-    homeConfigurations = {
-      # Name should name of the user
-      b2slabs = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        modules = [ ./configuration.nix 
 
-        extraSpecialArgs = { inherit inputs; };
-        modules = [ ./home.nix ];
-      };
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.extraSpecialArgs = { inherit inputs; };
+          home-manager.users.b2slabs = ./home.nix;
+        }
+      ];
     };
   };
+};
 
 }
