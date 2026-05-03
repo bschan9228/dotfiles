@@ -24,18 +24,20 @@
       # Configuration for the system
       nixos = lib.nixosSystem {
         inherit system;
-        modules = [ ./configuration.nix 
 
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
-          home-manager.users.b2slabs = ./home.nix;
-        }
-      ];
+        modules = [
+          ./configuration.nix 
+        ];
+      };
+    };
+    homeConfigurations = {
+      b2slabs = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        extraSpecialArgs = { inherit inputs; };
+
+        modules = [ ./home.nix ];
+      };
     };
   };
-};
-
 }
