@@ -20,7 +20,7 @@ in
 
         # Monitors
         # Check monitors using `hyprctl monitors`
-        # Set monitor resolution using `hyprctl keyword monitor "..."
+        # Set monitor resolution using `hyprctl keyword monitor "Virtual-1,1920x1080@60,0x0,1"`
         monitor = [
           ",preferred,auto,auto"
           "Virtual-1,1920x1080@60,0x0,1"

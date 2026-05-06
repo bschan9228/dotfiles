@@ -114,6 +114,7 @@
   dunst # Notifications
   libnotify # Notifications
   pipewire # Screensharing
+  wl-clipboard
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

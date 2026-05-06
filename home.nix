@@ -43,6 +43,7 @@
 
     docker
     python315
+    nodejs
     gcc
     gdb
 
