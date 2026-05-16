@@ -25,12 +25,7 @@
       " Increment characters
       " set nrformats+=alpha
 
-      " set hlsearch " `Ctrl-l` to clear highlighted search
-      augroup auto-highlight
-        au!
-        autocmd CmdlineEnter /,\? :set hlsearch
-        autocmd CmdlineLeave /,\? :set nohlsearch
-      augroup END
+      set hlsearch " `Ctrl-l` to clear highlighted search. vim-cool also auto clears
 
       highlight ColorColumn ctermbg=magenta
       call matchadd('ColorColumn', '\%81v', 100)
@@ -50,6 +45,7 @@
     plugins = with pkgs.vimPlugins; [
       vim-surround # cs[']["] & ys1w[]] / yss[)]
       vim-table-mode
+      vim-cool
     ];
   };
 
