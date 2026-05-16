@@ -29,7 +29,7 @@ in
         # Autostart
         exec-once = [
           "${terminal}"
-          "firefox"
+          # "firefox"
           "ashell"
           # "waybar"
           "dunst"

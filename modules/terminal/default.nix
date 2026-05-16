@@ -1,6 +1,15 @@
 { config, pkgs, ... }:
 
 {
+  #TODO: cursor changes to beam when enabled. Should be bar
+  programs.bash = {
+    # enable = true;
+
+    initExtra = ''
+      set -o vi
+    '';
+  };
+
   programs.tmux = {
     enable = true;
     extraConfig = ''

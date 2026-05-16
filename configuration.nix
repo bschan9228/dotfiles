@@ -53,6 +53,9 @@
   # Enable hyprland
   programs.hyprland.enable = true;
 
+  # Enable niri
+  # programs.niri.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -106,7 +109,9 @@
   wget
   git
   htop
+  fastfetch
   curl
+  emacs
 
   kitty
   ashell # Status bar

@@ -3,12 +3,12 @@
 {
   programs.vim = {
     enable = true;
+    # TODO: start position to last quit
     extraConfig = ''
       set nu rnu
       set cursorcolumn
       set cursorline
       set noswapfile
-      set hlsearch " `Ctrl-l` to clear highlighted search
       " set incsearch " this one is not as good
       set autoindent
       set shiftwidth=4
@@ -24,6 +24,13 @@
 
       " Increment characters
       " set nrformats+=alpha
+
+      " set hlsearch " `Ctrl-l` to clear highlighted search
+      augroup auto-highlight
+        au!
+        autocmd CmdlineEnter /,\? :set hlsearch
+        autocmd CmdlineLeave /,\? :set nohlsearch
+      augroup END
 
       highlight ColorColumn ctermbg=magenta
       call matchadd('ColorColumn', '\%81v', 100)
@@ -80,5 +87,26 @@
   };
 
   #TODO: emacs
+#  programs.emacs = {
+#    enable = true;
+#    package = pkgs.emacs-pgtk;
+#    extraPackages = epkgs: with epkgs; [
+#      evil
+#    ];
+#
+#    extraConfig = ''
+#      (require 'package)
+#      (add-to-list 'package-archives
+#                   '("melpa" . "https://mepla.org/packages/))
+#      (package-initialize)
+#      (packages-refresh-contents)
+#
+#      (unless (package-installed-p 'evil)
+#        (package-install 'evil))
+#
+#      (require 'evil)
+#      (evil-mode 1)
+#    '';
+#  };
 
 }
