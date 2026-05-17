@@ -120,6 +120,8 @@
   libnotify # Notifications
   pipewire # Screensharing
   wl-clipboard
+  kdePackages.dolphin # file manager
+  hyprlauncher
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

@@ -28,7 +28,7 @@ in
 
         # Autostart
         exec-once = [
-          "${terminal}"
+          "${terminal} tmux new-session -A -s main"
           # "firefox"
           "ashell"
           # "waybar"
