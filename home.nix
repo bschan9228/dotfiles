@@ -7,7 +7,7 @@
     ./modules/git
     ./modules/webbrowser
     ./modules/graphicseditor
-    ./modules/hyprland
+    ./modules/desktopmanager
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
@@ -100,7 +100,6 @@
   #  /etc/profiles/per-user/b2slabs/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
   };
 
   # Let Home Manager install and manage itself.

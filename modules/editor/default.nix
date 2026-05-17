@@ -82,27 +82,10 @@
     };
   };
 
-  #TODO: emacs
-#  programs.emacs = {
-#    enable = true;
-#    package = pkgs.emacs-pgtk;
-#    extraPackages = epkgs: with epkgs; [
-#      evil
-#    ];
-#
-#    extraConfig = ''
-#      (require 'package)
-#      (add-to-list 'package-archives
-#                   '("melpa" . "https://mepla.org/packages/))
-#      (package-initialize)
-#      (packages-refresh-contents)
-#
-#      (unless (package-installed-p 'evil)
-#        (package-install 'evil))
-#
-#      (require 'evil)
-#      (evil-mode 1)
-#    '';
-#  };
+  # TODO: emacs
+  # need to manually install doom emacs
+  programs.emacs = {
+    enable = true;
+  };
 
 }

@@ -3,10 +3,15 @@
 let
   terminal = "kitty";
   fileManager = "dolphin";
-  menu = "hyprlauncher";
+  menu = "rofi -show drun";
   webbrowser = "firefox";
 in
   {
+    programs.rofi = {
+      enable = true;
+      theme = "glue_pro_blue";
+    };
+    
     programs.kitty.enable = true;
     # Electron things
     home.sessionVariables.NIXOS_OZONE_WL = "1";

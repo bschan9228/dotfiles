@@ -111,8 +111,15 @@
   htop
   fastfetch
   curl
-  emacs
 
+  # Emacs
+  emacs
+  emacsGcc
+  ripgrep
+  fd
+  clang
+
+  # hyprland
   kitty
   ashell # Status bar
   waybar # Status bar
@@ -122,6 +129,14 @@
   wl-clipboard
   kdePackages.dolphin # file manager
   hyprlauncher
+  rofi
+  ];
+
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+      url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
+      sha256 = "sha256:0a6b6g00wxdjxpmi6nvsgpa2ji2pn4gxlgwpscmv8srgjam10x9h";
+    }))
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
