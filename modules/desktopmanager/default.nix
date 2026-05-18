@@ -9,7 +9,7 @@ in
   {
     programs.rofi = {
       enable = true;
-      theme = "glue_pro_blue";
+      theme = "Arc-Dark";
     };
     
     programs.kitty.enable = true;

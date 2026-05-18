@@ -46,6 +46,9 @@
     nodejs
     gcc
     gdb
+    cmake
+    gnumake
+    libtool
 
     bruno
     kicad
