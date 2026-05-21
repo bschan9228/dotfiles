@@ -10,5 +10,14 @@
       };
       init.defaultBranch = "main";
     };
+    ignores = [
+      # vim
+      "*~"
+      "*.swp"
+      "*.swo"
+
+      # emacs
+      "\#*\#"
+    ];
   };
 }
