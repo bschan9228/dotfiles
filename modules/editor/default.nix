@@ -8,7 +8,6 @@
       set nu rnu
       set cursorcolumn
       set cursorline
-      set noswapfile
       " set incsearch " this one is not as good
       set autoindent
       set shiftwidth=4
@@ -21,6 +20,10 @@
       set undofile
       set shortmess-=S
       " set nowrap " disable text wrapping
+
+      " Swapfile
+      " set noswapfile
+      " set shortmess=A
 
       " Increment characters
       " set nrformats+=alpha
