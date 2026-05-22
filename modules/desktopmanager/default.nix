@@ -11,7 +11,7 @@ in
       enable = true;
       theme = "Arc-Dark";
     };
-    
+
     programs.kitty.enable = true;
     # Electron things
     home.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -20,7 +20,8 @@ in
 
     wayland.windowManager.hyprland = {
       enable = true;
-      
+      # configType = "lua";
+
       settings = {
 
         # Monitors
@@ -65,10 +66,10 @@ in
         };
 
         dwindle = {
-          pseudotile = true;
+          # pseudotile = true; # no longer exists
           preserve_split = true;
           force_split = 2; # Force split to right side
-          single_window_aspect_ratio = "16 9";
+          # single_window_aspect_ratio = "16 9"; # No longer exists
         };
 
         # Autostart
@@ -77,6 +78,7 @@ in
         bind = [
           "$mod, Q, exec, ${terminal}"
           "$mod, F, exec, ${webbrowser}"
+          "$mod SHIFT, F, exec, ${webbrowser} --private-window"
           "$mod, C, killactive,"
           "$mod, M, exec, command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"
           "$mod, E, exec, ${fileManager}" #TODO
@@ -140,16 +142,24 @@ in
         # Picture in picture
         # `Ctrl-Shift ]` for PiP
         # TODO: somehow automatically avoid covering focused window
-        windowrulev2 = [
-          "float, title:^Picture-in-Picture$"
-          "pin, title:^Picture-in-Picture$"
-          "noshadow, title:^Picture-in-Picture$"
-          "noinitialfocus, title:^Picture-in-Picture$"
-          # "size 600 340, title:^Picture-in-Picture$"
-          "size 25% 25%, title:^Picture-in-Picture$"
-          "move 100%-w-5 5, title:^Picture-in-Picture$"
-        ];
+        windowrule = [
+          {
+            name = "Picture in Picture";
 
+            match = {
+              #title = "^Picture-in-Picture$";
+              title = "Picture-in-Picture";
+            };
+
+            float = true;
+            pin = true;
+            no_shadow = true;
+            no_initial_focus = true;
+
+            size = "(monitor_w*0.25) (monitor_h*0.25)";
+            move = "monitor_w-window_w-5 5";
+          }
+        ];
       };
 
       submaps = {

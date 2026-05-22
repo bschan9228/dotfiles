@@ -44,7 +44,6 @@
         greasemonkey
         # keepa #TODO: unfree
       ];
-
     };
   };
 }
