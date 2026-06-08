@@ -20,6 +20,7 @@
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
         "browser.urlbar.suggest.trending" = false;
         "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = true;
+        "browser.download.open_pdf_attachments_inline" = true;
 
         # Firefox development tools
         # Open using `Ctrl` + `Alt` + `Shift` + `I`

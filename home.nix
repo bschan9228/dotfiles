@@ -36,6 +36,9 @@
     inkscape
     gimp
 
+    texliveFull
+    gnuplot
+
     tmux
     neovim
     vscode
@@ -49,6 +52,13 @@
     cmake
     gnumake
     libtool
+
+    R
+    (rWrapper.override {
+      packages = with rPackages; [
+        ggplot2
+      ];
+    })
 
     bruno
     kicad
