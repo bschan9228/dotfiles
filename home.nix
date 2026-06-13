@@ -45,13 +45,16 @@
     minicom
 
     docker
-    python315
     nodejs
     gcc
     gdb
     cmake
     gnumake
     libtool
+
+    (pkgs.python314.withPackages (ps: with ps; [
+      matplotlib
+    ]))
 
     R
     (rWrapper.override {

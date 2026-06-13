@@ -157,7 +157,8 @@ in
             no_initial_focus = true;
 
             size = "(monitor_w*0.25) (monitor_h*0.25)";
-            move = "monitor_w-window_w-5 5";
+            # move = "monitor_w-window_w-5 5";
+            move = "monitor_w*0.75-5 5";
           }
         ];
       };
