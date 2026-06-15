@@ -17,8 +17,12 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
+    # inputs.self.homeManagerModules.cad
     inputs.self.homeManagerModules.editor
     inputs.self.homeManagerModules.git
+    inputs.self.homeManagerModules.graphicseditor
+    inputs.self.homeManagerModules.terminal
+    inputs.self.homeManagerModules.webbrowser
   ];
 
   nixpkgs = {
@@ -56,6 +60,7 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
+    inkscape
   ];
 
   # Enable home-manager and git
