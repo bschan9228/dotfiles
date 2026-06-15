@@ -2,6 +2,6 @@
 
 {
   imports = [ 
-    "./kicad.nix"
+    ./kicad.nix
   ];
 }

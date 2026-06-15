@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      # ./nvidia.nix
       inputs.self.nixosModules.nvidia
       inputs.self.nixosModules.power
     ];
@@ -105,6 +104,7 @@
     htop
     fastfetch
     curl
+    psmisc
 
     firefox
   ];

@@ -17,7 +17,8 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    # inputs.self.homeManagerModules.cad
+    inputs.self.homeManagerModules.cad
+    # inputs.self.homeManagerModules.desktopmanager
     inputs.self.homeManagerModules.editor
     inputs.self.homeManagerModules.git
     inputs.self.homeManagerModules.graphicseditor
