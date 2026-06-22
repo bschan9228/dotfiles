@@ -61,7 +61,30 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
-    inkscape
+    # Images
+    inkscape # Image editor
+    imagemagick # Image editor
+    sxiv # Image viewer
+
+    # PL
+    ## Python
+    (python3.withPackages (ps: [
+      ps.requests
+      ps.matplotlib
+    ]))
+    ## R
+    R
+    ## C/C++
+    cmake
+    gcc
+    gdb #debugger
+    gnumake # make
+    libtool
+    # bash
+    jq # Terminal Json
+
+    # emacs
+    gnuplot
   ];
 
   # Enable home-manager and git
