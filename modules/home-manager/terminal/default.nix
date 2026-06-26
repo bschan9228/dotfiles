@@ -2,6 +2,7 @@
 
 {
   #TODO: cursor changes to beam when enabled. Should be bar
+  #TODO: add colors for man page
   programs.bash = {
     enable = true;
 

@@ -22,6 +22,7 @@
     inputs.self.homeManagerModules.editor
     inputs.self.homeManagerModules.git
     inputs.self.homeManagerModules.graphicseditor
+    inputs.self.homeManagerModules.home
     inputs.self.homeManagerModules.terminal
     inputs.self.homeManagerModules.webbrowser
   ];

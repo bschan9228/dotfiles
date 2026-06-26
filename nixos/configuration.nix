@@ -105,6 +105,7 @@
     fastfetch
     curl
     psmisc
+    tldr
 
     firefox
   ];

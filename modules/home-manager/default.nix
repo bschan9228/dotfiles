@@ -8,6 +8,7 @@
   editor = import ./editor;
   git = import ./git;
   graphicseditor = import ./graphicseditor;
+  home = import ./home;
   terminal = import ./terminal;
   webbrowser = import ./webbrowser;
 }
