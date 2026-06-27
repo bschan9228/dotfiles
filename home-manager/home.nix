@@ -81,8 +81,10 @@
     gdb #debugger
     gnumake # make
     libtool
-    # bash
     jq # Terminal Json
+
+    # LaTeX
+    pkgs.texlive.combined.scheme-full
 
     # emacs
     gnuplot
