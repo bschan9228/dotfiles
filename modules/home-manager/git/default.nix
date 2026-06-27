@@ -3,13 +3,16 @@
 {
   programs.git = {
     enable = true;
+
     settings = {
       user = {
         name = "bschan9228";
         email = "bschan9228@gmail.com";
       };
       init.defaultBranch = "main";
+      core.editor = "vim";
     };
+
     ignores = [
       # vim
       "*~"
@@ -18,6 +21,9 @@
 
       # emacs
       "\#*\#"
+
+      # misc
+      "temp*"
     ];
   };
 }
