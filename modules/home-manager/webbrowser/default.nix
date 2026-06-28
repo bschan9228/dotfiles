@@ -21,6 +21,9 @@
         "media.videocontrols.picture-in-picture.enable-when-switching-tabs.enabled" = true;
         "browser.download.open_pdf_attachments_inline" = true;
 
+        "browser.urlbar.suggest.quicksuggest.sponsored" = false;
+        "browser.urlbar.suggest.bookmark" = true;
+        
         # Firefox development tools
         # Open using `Ctrl` + `Alt` + `Shift` + `I`
         "devtools.chrome.enabled" = true;

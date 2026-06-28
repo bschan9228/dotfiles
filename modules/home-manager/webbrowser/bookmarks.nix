@@ -6,6 +6,11 @@
         name = "Misc";
         bookmarks = [
           {
+            name = "git";
+            url = "https://github.com/bschan9228/%s?tab=repositories";
+            keyword = "g";
+          }
+          {
             name = "wikipedia";
             tags = [ "wiki" ];
             keyword = "wiki";
@@ -17,15 +22,17 @@
           }
           {
             name = "translate";
-            url = "https://www.translate.google.com";
+            keyword = "translate";
+            url = "https://www.google.com/translate";
           }
           {
             name = "maps";
-            url = "https://www.maps.google.com";
+            keyword = "maps";
+            url = "https://www.google.com/maps";
           }
           {
             name = "youtube";
-            url = "https://www.Youtube.com";
+            url = "https://www.youtube.com";
           }
           {
             name = "gitlab";
