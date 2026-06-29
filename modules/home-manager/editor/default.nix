@@ -88,6 +88,10 @@
   # need to manually install doom emacs
   programs.emacs = {
     enable = true;
+
+    extraPackages = epkgs: [
+      epkgs.pdf-tools
+    ];
   };
 
 }

@@ -81,9 +81,13 @@
     gdb #debugger
     gnumake # make
     libtool
-    jq # Terminal Json
 
-    # LaTeX
+    ## web
+    jq # Terminal Json
+    burpsuite
+    bruno
+
+    # LaTeX / pdf
     pkgs.texlive.combined.scheme-full
 
     # emacs

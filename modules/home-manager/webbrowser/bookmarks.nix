@@ -5,11 +5,23 @@
       {
         name = "Misc";
         bookmarks = [
+
+          {
+            name = "digikey";
+            url = "https://www.digikey.com/en/products?keywords=%s";
+            keyword = "d";
+          }
+          {
+            name = "mouser";
+            url = "https://www.mouser.com/c/?q=%s";
+            keyword = "m";
+          }
           {
             name = "git";
             url = "https://github.com/bschan9228/%s?tab=repositories";
             keyword = "g";
           }
+
           {
             name = "wikipedia";
             tags = [ "wiki" ];
