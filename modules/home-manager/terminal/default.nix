@@ -19,7 +19,9 @@
     extraConfig = ''
       set -g prefix C-b
       set -g mouse on
-      set -g mode-keys vi
+      set -g mode-keys vi # Ctrl-b [
+
+      set -s set-clipboard on
 
       bind-key h select-pane -L
       bind-key j select-pane -D

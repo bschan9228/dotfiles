@@ -92,6 +92,9 @@
 
     # emacs
     gnuplot
+
+    # misc
+    wl-clipboard
   ];
 
   # Enable home-manager and git
