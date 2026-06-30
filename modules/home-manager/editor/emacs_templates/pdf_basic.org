@@ -1,0 +1,5 @@
+#+LATEX_CLASS-OPTIONS: [letterpaper]
+#+LATEX_HEADER: \usepackage{lmodern} % correct font
+#+LATEX_HEADER: \usepackage[AUTO]{inputenc}
+#+OPTIONS: toc:nil
+#+AUTHOR: Byron Chan

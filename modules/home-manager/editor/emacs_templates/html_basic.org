@@ -1,0 +1,9 @@
+#+AUTHOR: Byron Chan
+#+OPTIONS: toc:nil num:nil
+#+HTML_HEAD: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+#+HTML_HEAD: <link rel="stylesheet" href="file:///home/b2slabs/.dotfiles/modules/home-manager/editor/emacs_templates/default.css">
+
+#+ATTR_HTML: :frame none
+# #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/html-theme-readtheorg.setup
+# #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/html-theme-bigblow.setup
+
