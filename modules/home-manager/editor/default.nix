@@ -10,7 +10,7 @@
       set cursorline
       " set incsearch " this one is not as good
       set autoindent
-      set shiftwidth=4
+      set shiftwidth=4 tabstop=4 expandtab
       set expandtab
       set smarttab
       set backspace=indent,eol,start
@@ -93,5 +93,6 @@
       epkgs.pdf-tools
     ];
   };
-
+  xdg.configFile."emacs/templates".source = ./emacs_templates;
+  # xdg.configFile."emacs/templates".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/path/to/emacs_templates";
 }

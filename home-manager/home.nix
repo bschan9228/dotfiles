@@ -68,13 +68,16 @@
     sxiv # Image viewer
 
     # PL
+
     ## Python
     (python3.withPackages (ps: [
       ps.requests
       ps.matplotlib
     ]))
+
     ## R
     R
+
     ## C/C++
     cmake
     gcc

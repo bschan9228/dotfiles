@@ -83,7 +83,7 @@
   users.users.b2slabs = {
     isNormalUser = true;
     description = "b2slabs";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -106,8 +106,12 @@
     curl
     psmisc
     tldr
+    xorg.xhost
 
     firefox
+
+    lazydocker
+    docker-compose
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -138,4 +142,9 @@
   system.stateVersion = "25.11"; # Did you read the comment?
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  virtualisation.docker = {
+    enable = true;
+    package = pkgs.docker_29;
+  };
 }
