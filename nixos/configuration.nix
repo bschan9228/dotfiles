@@ -147,4 +147,6 @@
     enable = true;
     package = pkgs.docker_29;
   };
+  programs.direnv.enable = true;
+
 }

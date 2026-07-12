@@ -21,6 +21,17 @@
       set shortmess-=S
       " set nowrap " disable text wrapping
 
+      " Find file
+      set path+=**
+      set wildignore+=**/node_modules/**
+      set hidden
+
+      " Fold
+      autocmd BufWinLeave * if &buftype == "" | silent! mkview | endif
+      autocmd BufWinEnter * if &buftype == "" | silent! loadview | endif
+
+      autocmd FileType netrw normal! 2j " moves netrw file explorer to first folder
+
       " Swapfile
       " set noswapfile
       " set shortmess=A

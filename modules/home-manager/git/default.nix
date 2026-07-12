@@ -22,6 +22,7 @@
       # vim
       "*~"
       ".*"
+      "!*.example"
       "!.gitignore"
 
       # emacs

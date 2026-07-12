@@ -86,9 +86,11 @@
     libtool
 
     ## web
-    jq # Terminal Json
+    nodejs
     burpsuite
     bruno
+
+    jq # Terminal Json
 
     # LaTeX / pdf
     pkgs.texlive.combined.scheme-full
