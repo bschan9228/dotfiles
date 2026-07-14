@@ -19,7 +19,7 @@
       set splitbelow
       set undofile
       set shortmess-=S
-      " set nowrap " disable text wrapping
+      set nowrap " disable text wrapping
 
       " Find file
       set path+=**

@@ -62,11 +62,6 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
-    # Images
-    inkscape # Image editor
-    imagemagick # Image editor
-    sxiv # Image viewer
-
     # PL
 
     ## Python
@@ -97,6 +92,17 @@
 
     # emacs
     gnuplot
+
+    # Images
+    inkscape # Image editor
+    imagemagick # Image editor
+    sxiv # Image viewer
+
+    # Electronics
+    kicad
+
+    # Hardware
+    freecad
 
     # misc
     wl-clipboard

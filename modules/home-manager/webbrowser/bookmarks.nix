@@ -5,7 +5,6 @@
       {
         name = "Misc";
         bookmarks = [
-
           {
             name = "digikey";
             url = "https://www.digikey.com/en/products?keywords=%s";
@@ -81,6 +80,14 @@
           {
             name = "ebay";
             url = "https://www.ebay.com";
+          }
+          {
+            name = "mynixos";
+            url = "https://mynixos.com";
+          }
+          {
+            name = "search.nixos.org";
+            url = "https://search.nixos.org";
           }
         ];
       }
