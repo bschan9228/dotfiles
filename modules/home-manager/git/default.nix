@@ -11,7 +11,7 @@
       };
       init.defaultBranch = "main";
       core.editor = "vim";
-      remote.origin.fetch = "+refs/heads/*:refs/remotes/origin/*"; # git worktree fetch
+      # remote.origin.fetch = "+refs/heads/*:refs/remotes/origin/*"; # git worktree fetch. may error out git clone.
 
       pull.ff = "only";
       # config.pull.rebase = true; # might be better to do ff only

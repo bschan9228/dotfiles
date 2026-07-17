@@ -34,12 +34,12 @@
           {
             name = "translate";
             keyword = "translate";
-            url = "https://www.google.com/translate";
+            url = "https://translate.google.com";
           }
           {
             name = "maps";
             keyword = "maps";
-            url = "https://www.google.com/maps";
+            url = "https://maps.google.com";
           }
           {
             name = "youtube";
