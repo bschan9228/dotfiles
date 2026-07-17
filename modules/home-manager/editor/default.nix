@@ -104,7 +104,11 @@
       epkgs.pdf-tools
     ];
   };
-  xdg.configFile."doom".source = ./doom;
+
+  xdg.configFile."doom" = {
+    source = ./doom;
+    force = true;
+  };
   xdg.configFile."emacs/templates".source = ./emacs_templates;
   # xdg.configFile."emacs/templates".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/path/to/emacs_templates";
 }

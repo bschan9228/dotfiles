@@ -110,6 +110,7 @@
     tldr
     xorg.xhost
     minicom
+    devenv
 
     firefox
 
@@ -145,11 +146,13 @@
   system.stateVersion = "25.11"; # Did you read the comment?
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = [ "root" "b2slabs" ];
 
   virtualisation.docker = {
     enable = true;
     package = pkgs.docker_29;
   };
   programs.direnv.enable = true;
+
 
 }
