@@ -1,6 +1,5 @@
-- ~nix shell nixpkgs#home-manager~
-
-1. ~cp /etc/nixos/hardware-configuration.nix ~/.dotfiles~
+1. ~cp /etc/nixos/hardware-configuration.nix ~/.dotfiles/nixos~
 2. ~nix flake show ~/.dotfiles~
 3. ~sudo nixos-rebuild switch --flake .#desktop~
-4. ~nixos-rebuild switch --flake .#b2slabs@desktop~
+4. ~nix shell nixpkgs#home-manager~
+5. ~home-manager switch --flake .#b2slabs@desktop~
