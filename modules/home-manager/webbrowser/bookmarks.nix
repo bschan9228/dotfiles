@@ -89,6 +89,10 @@
             name = "search.nixos.org";
             url = "https://search.nixos.org";
           }
+          {
+            name = "nixhub";
+            url = "https://nixhub.io";
+          }
         ];
       }
     ];

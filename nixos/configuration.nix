@@ -82,6 +82,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.b2slabs = {
     isNormalUser = true;
+    initialPassword = "password";
     description = "b2slabs";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
@@ -144,6 +145,12 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "25.11"; # Did you read the comment?
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.trusted-users = [ "root" "b2slabs" ];

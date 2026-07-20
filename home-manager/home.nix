@@ -99,7 +99,7 @@
     sxiv # Image viewer
 
     # Electronics
-    kicad
+    unstablePkgs.kicad
 
     # Hardware
     freecad
