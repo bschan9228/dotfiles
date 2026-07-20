@@ -24,6 +24,7 @@
       ".*"
       "!*.example"
       "!.gitignore"
+      "!.envrc"
 
       # emacs
       "\#*\#"
