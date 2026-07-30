@@ -86,6 +86,7 @@
     bruno
 
     jq # Terminal Json
+    xmlstarlet # Terminal xml
 
     # LaTeX / pdf
     pkgs.texlive.combined.scheme-full
@@ -102,9 +103,11 @@
     unstablePkgs.kicad
 
     # Hardware
+    ltspice
     freecad
 
     # misc
+    jj
     wl-clipboard
   ];
 

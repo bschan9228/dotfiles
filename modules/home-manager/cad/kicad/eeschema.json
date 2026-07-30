@@ -181,9 +181,21 @@
     "esc_clears_net_highlight": true
   },
   "lib_tree": {
-    "column_widths": null,
-    "columns": [],
-    "open_libs": []
+    "column_widths": {
+      "Description": 600,
+      "Item": 300
+    },
+    "columns": [
+      "Item",
+      "Description"
+    ],
+    "open_libs": [
+      "-- Recently Used --",
+      "-- Already Placed --",
+      "Jumper",
+      "Auxiliary_Items",
+      "Device"
+    ]
   },
   "lib_view": {
     "cmp_list_width": 150,
@@ -435,14 +447,15 @@
     }
   },
   "symbol_chooser": {
-    "height": -1,
-    "sash_pos_h": -1,
-    "sash_pos_v": -1,
+    "height": 859,
+    "sash_pos_h": 495,
+    "sash_pos_v": 518,
     "sort_mode": 0,
-    "width": -1
+    "width": 990
   },
   "system": {
     "file_history": [
+      "/home/b2slabs/Documents/electronics/digital_decade_box/hardware/board.kicad_sch",
       "/home/b2slabs/Documents/electronics/720_test/720_test.kicad_sch"
     ],
     "first_run_shown": false,

@@ -93,6 +93,10 @@
             name = "nixhub";
             url = "https://nixhub.io";
           }
+          {
+            name = "wolfram alpha";
+            url = "https://wolframalpha.com/";
+          }
         ];
       }
     ];

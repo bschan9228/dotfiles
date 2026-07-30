@@ -7,5 +7,16 @@
   };
 
   services.xserver.videoDrivers = [ "nvidia" ];
-  hardware.nvidia.open = true; # Set to false to use the proprietary kernel module
+
+  # https://discourse.nixos.org/t/gnome-gdm-glitches-after-suspending-sleep/52410/21
+  hardware.nvidia = {
+    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    open = true;
+    modesetting.enable = true;
+
+    powerManagement = {
+      enable = true;
+#      finegrained = false;
+    };
+  };
 }

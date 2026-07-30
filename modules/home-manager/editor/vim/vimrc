@@ -1,0 +1,48 @@
+set nu rnu
+set cursorcolumn
+set cursorline
+" set incsearch " this one is not as good
+set autoindent
+set shiftwidth=4 tabstop=4 expandtab
+set expandtab
+set smarttab
+set backspace=indent,eol,start
+set ruler
+set splitright
+set splitbelow
+set undofile
+set shortmess-=S
+set nowrap " disable text wrapping
+
+" Find file
+set path+=**
+set wildignore+=**/node_modules/**
+set hidden
+
+" Fold
+autocmd BufWinLeave * if &buftype == "" | silent! mkview | endif
+autocmd BufWinEnter * if &buftype == "" | silent! loadview | endif
+
+autocmd FileType netrw normal! 2j " moves netrw file explorer to first folder
+
+" Swapfile
+" set noswapfile
+" set shortmess=A
+
+" Increment characters
+" set nrformats+=alpha
+
+set hlsearch " `Ctrl-l` to clear highlighted search. vim-cool also auto clears
+
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+highlight CursorColumn ctermbg=238
+highlight CursorLine cterm=NONE ctermbg=238
+
+" Bracket autocomplete
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+" inoremap " ""<Esc>ha
+" inoremap ` ``<Esc>ha
