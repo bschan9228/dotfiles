@@ -12,6 +12,10 @@
         tmux new-session -A -s main
       fi
     '';
+
+    shellAliases = {
+      decibels = "org.gnome.Decibels";
+    };
   };
 
   programs.tmux = {
