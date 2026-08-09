@@ -7,6 +7,7 @@
 
   programs.firefox = {
     enable = true;
+    configPath = ".mozilla/firefox"; # TODO: old dir
     profiles.default = {
       settings = {
         # "browser.startup.homepage" = "https://google.com";

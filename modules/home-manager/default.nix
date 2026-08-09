@@ -4,11 +4,14 @@
   # List your module files here
   # my-module = import ./my-module.nix;
   cad = import ./cad;
-  desktopmanager = import ./desktopmanager;
   editor = import ./editor;
   git = import ./git;
   graphicseditor = import ./graphicseditor;
   home = import ./home;
   terminal = import ./terminal;
   webbrowser = import ./webbrowser;
+
+  # Desktop managers
+  niri = ./desktopmanager/niri.nix;
+  hyprland = ./desktopmanager/hyprland.nix; #TODO
 }

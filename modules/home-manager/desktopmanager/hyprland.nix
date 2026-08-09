@@ -7,6 +7,19 @@ let
   webbrowser = "firefox";
 in
   {
+    home.packages = with pkgs; [
+      kitty
+      ashell # Status bar
+      waybar # Status bar
+      dunst # Notifications
+      libnotify # Notifications
+      pipewire # Screensharing
+      wl-clipboard
+      kdePackages.dolphin # file manager
+      hyprlauncher
+      rofi
+    ];
+
     programs.rofi = {
       enable = true;
       theme = "Arc-Dark";
@@ -19,8 +32,9 @@ in
     xdg.configFile."hypr/hyprland.conf".force = true;
 
     wayland.windowManager.hyprland = {
-      enable = true;
+      configType = "hyprlang"; #TODO: old
       # configType = "lua";
+      enable = true;
 
       settings = {
 

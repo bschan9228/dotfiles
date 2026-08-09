@@ -115,6 +115,7 @@
 
     firefox
 
+    podman
     lazydocker
     docker-compose
   ];
@@ -166,6 +167,10 @@
     package = pkgs.docker_29;
   };
   programs.direnv.enable = true;
-
-
+  programs.niri.enable = true;
+    programs.hyprland = {
+      enable = true;
+      withUWSM = true;
+      xwayland.enable = true;
+    };
 }

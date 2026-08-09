@@ -18,13 +18,14 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     inputs.self.homeManagerModules.cad
-    # inputs.self.homeManagerModules.desktopmanager
     inputs.self.homeManagerModules.editor
     inputs.self.homeManagerModules.git
     inputs.self.homeManagerModules.graphicseditor
     inputs.self.homeManagerModules.home
     inputs.self.homeManagerModules.terminal
     inputs.self.homeManagerModules.webbrowser
+    #inputs.self.homeManagerModules.niri
+    inputs.self.homeManagerModules.hyprland
   ];
 
   nixpkgs = {
@@ -72,6 +73,8 @@
 
     ## R
     R
+    ## Lisp
+    sbcl
 
     ## C/C++
     cmake
@@ -116,5 +119,5 @@
   programs.git.enable = true;
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 }
