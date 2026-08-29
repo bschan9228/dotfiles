@@ -209,3 +209,17 @@
 
 ;; disable text wrap
 (add-hook 'org-mode-hook 'toggle-truncate-lines)
+
+;; envrc
+;(require 'package)
+;(package-initialize)
+
+;(unless (package-installed-p 'use-package)
+;  (package-refresh-contents)
+;  (package-install 'use-package))
+;
+;(require 'use-package)
+;
+;(use-package! envrc
+;  :config
+;  (envrc-global-mode))

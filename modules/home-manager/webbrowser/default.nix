@@ -10,6 +10,7 @@
     configPath = ".mozilla/firefox"; # TODO: old dir
     profiles.default = {
       settings = {
+        "general.autoScroll" = true;
         # "browser.startup.homepage" = "https://google.com";
         "browser.newtabpage.activity-stream.feeds.section.topstories" = false;
         "browser.urlbar.autoFill.adaptiveHistory.enabled" = true;
