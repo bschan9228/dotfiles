@@ -159,8 +159,13 @@
     "variant_sash_pos": 500
   },
   "find_replace": {
-    "find_history": [],
-    "find_string": "",
+    "find_history": [
+      "VDD_USB",
+      "VDD",
+      "vdd",
+      ""
+    ],
+    "find_string": "VDD_USB",
     "match_case": false,
     "match_mode": 0,
     "replace_history": [],
@@ -169,7 +174,7 @@
     "search_all_fields": false,
     "search_all_pins": false,
     "search_and_replace": false,
-    "search_current_sheet_only": false
+    "search_current_sheet_only": true
   },
   "graphics": {
     "highlight_factor": 0.5,
@@ -190,11 +195,41 @@
       "Description"
     ],
     "open_libs": [
-      "-- Recently Used --",
-      "-- Already Placed --",
-      "Jumper",
-      "Auxiliary_Items",
-      "Device"
+      "LED",
+      "Driver_LED",
+      "Switch",
+      "Display_Character",
+      "Interface_Expansion",
+      "Sensor_Proximity",
+      "Display_Graphic",
+      "Graphic",
+      "RF_Module",
+      "Transistor_Array",
+      "Transistor_FET",
+      "Isolator",
+      "Relay",
+      "MCU_Module",
+      "Oscillator",
+      "Power_Management",
+      "Device",
+      "Connector",
+      "Regulator_Switching",
+      "Analog_ADC",
+      "Audio",
+      "74xx",
+      "Amplifier_Audio",
+      "Amplifier_Difference",
+      "Analog_Switch",
+      "Battery_Management",
+      "Driver_FET",
+      "Driver_Motor",
+      "Relay_SolidState",
+      "Sensor_Pressure",
+      "Simulation_SPICE",
+      "Triac_Thyristor",
+      "Video",
+      "Diode_Laser",
+      "Sensor_Optical"
     ]
   },
   "lib_view": {
@@ -455,13 +490,14 @@
   },
   "system": {
     "file_history": [
-      "/home/b2slabs/Documents/electronics/digital_decade_box/hardware/board.kicad_sch",
-      "/home/b2slabs/Documents/electronics/720_test/720_test.kicad_sch"
+      "/home/b2slabs/Documents/electronics/EG912UGLAC/hardware/board.kicad_sch",
+      "/home/b2slabs/Documents/electronics/720_test/720_test.kicad_sch",
+      "/home/b2slabs/Documents/electronics/digital_decade_box/hardware/board.kicad_sch"
     ],
     "first_run_shown": false,
     "last_imperial_units": 5,
     "last_metric_units": 1,
-    "last_symbol_lib_dir": "",
+    "last_symbol_lib_dir": "/home/b2slabs/Documents/electronics/EG912UGLAC/hardware/lib",
     "max_undo_items": 0,
     "never_show_rescue_dialog": false,
     "show_import_issues": true,
@@ -473,7 +509,7 @@
       "always_show_cursor": true,
       "cross_hair_mode": 0
     },
-    "display": 0,
+    "display": 1,
     "grid": {
       "axes_enabled": false,
       "fast_grid_1": 1,
@@ -523,8 +559,8 @@
     "maximized": true,
     "mru_path": "",
     "perspective": "layout2|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=TopMainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1374;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=348;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SchematicHierarchy;caption=Schematic Hierarchy;state=2099148;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=300;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=378;floaty=109;floatw=200;floath=200|name=PropertiesManager;caption=Properties;state=2099148;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=300;floath=400|name=SelectionFilter;caption=Selection Filter;state=2098636;dir=4;layer=3;row=0;pos=2;prop=0;bestw=180;besth=-1;minw=180;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DesignBlocks;caption=Design Blocks;state=2099150;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=800;floath=600|name=RemoteSymbol;caption=Remote Symbols;state=2099150;dir=2;layer=3;row=0;pos=3;prop=100000;bestw=300;besth=200;minw=240;minh=60;maxw=-1;maxh=-1;floatx=80;floaty=220;floatw=800;floath=600|name=NetNavigator;caption=Net Navigator;state=2099150;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=50;floaty=200;floatw=200;floath=200|name=LeftToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=348;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=RightToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=34;besth=810;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=348;besth=99;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Search;caption=Search;state=2098686;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=100;minw=180;minh=60;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=480;floath=200|dock_size(1,6,0)=38|dock_size(3,6,0)=38|dock_size(4,3,0)=302|dock_size(4,2,0)=34|dock_size(2,2,0)=34|dock_size(5,0,0)=350|",
-    "pos_x": 4480,
-    "pos_y": 653,
+    "pos_x": 26,
+    "pos_y": 23,
     "size_x": 1280,
     "size_y": 720,
     "zoom_factors": [

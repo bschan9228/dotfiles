@@ -166,7 +166,10 @@
     enable = true;
     package = pkgs.docker_29;
   };
-  programs.direnv.enable = true;
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+  };
   programs.niri.enable = true;
   programs.hyprland = {
     enable = true;

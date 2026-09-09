@@ -104,6 +104,7 @@
 
     # Electronics
     unstablePkgs.kicad
+    #easyeda2kicad
 
     # Hardware
     ltspice
@@ -112,6 +113,12 @@
     # misc
     jj
     wl-clipboard
+    act
+
+    # Apps
+    discord
+    spotify
+
   ];
 
   # Enable home-manager and git

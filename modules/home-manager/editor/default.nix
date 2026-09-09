@@ -102,6 +102,7 @@
 
     extraPackages = epkgs: [
       epkgs.pdf-tools
+      epkgs.envrc
     ];
   };
 
