@@ -10,6 +10,7 @@
   home = import ./home;
   terminal = import ./terminal;
   webbrowser = import ./webbrowser;
+  llm = import ./llm;
 
   # Desktop managers
   niri = ./desktopmanager/niri.nix;
