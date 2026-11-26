@@ -63,8 +63,8 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
   home.packages = with pkgs; [
+    gh
     # PL
-
     ## Python
     (python3.withPackages (ps: [
       ps.requests
@@ -110,6 +110,9 @@
     ltspice
     freecad
 
+    # LLM
+    claude-code
+
     # misc
     jj
     wl-clipboard
@@ -118,8 +121,21 @@
     # Apps
     discord
     spotify
+    (google-chrome.override {
+      # Native Wayland ozone backend segfaults on startup under Hyprland
+      # (crashes in GTK4 theme loading); force XWayland instead.
+      commandLineArgs = "--ozone-platform=x11";
+    })
 
   ];
+
+  xdg.configFile."mimeapps.list".force = true;
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "application/pdf" = [ "firefox.desktop" ];
+    };
+  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;

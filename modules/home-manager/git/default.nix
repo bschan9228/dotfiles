@@ -16,6 +16,10 @@
       pull.ff = "only";
       # config.pull.rebase = true; # might be better to do ff only
 
+      extraConfig = {
+        # use ssh later. im lazy
+        github.protocol = "https";
+      };
     };
 
     ignores = [

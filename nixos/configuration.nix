@@ -170,10 +170,33 @@
     enable = true;
     nix-direnv.enable = true;
   };
+  programs.zsh.enable = true;
+  programs.starship.enable = true;
+
+  # wm
   programs.niri.enable = true;
   programs.hyprland = {
     enable = true;
     withUWSM = true;
     xwayland.enable = true;
   };
+
+  # ollama
+  services.ollama = {
+    enable = true;
+    package = pkgs.ollama-cuda;
+
+    loadModels = [
+      "qwen3.5:9b"
+      "qwen3-coder:30b"
+    ];
+  };
+  # open port for llm
+  # http://127.0.0.1:8080
+  services.open-webui = {
+    enable = true;
+    port = 8080;
+    host = "127.0.0.1";
+  };
+
 }
